@@ -34,16 +34,19 @@ with st.container():
         # 5. Lógica de cálculo executada ao clicar no botão
         if operacao == "Soma (+)":
             resultado = num1 + num2
+            st.balloons()  # Efeito visual de comemoração
             st.metric(label="Resultado da Soma", value=f"{resultado:.2f}")
             st.success("Cálculo realizado com sucesso!")
 
         elif operacao == "Subtração (-)":
             resultado = num1 - num2
+            st.balloons()  # Efeito visual de comemoração
             st.metric(label="Resultado da Subtração", value=f"{resultado:.2f}")
             st.success("Cálculo realizado com sucesso!")
 
         elif operacao == "Multiplicação (*)":
             resultado = num1 * num2
+            st.balloons()  # Efeito visual de comemoração
             st.metric(label="Resultado da Multiplicação", value=f"{resultado:.2f}")
             st.success("Cálculo realizado com sucesso!")
 
@@ -55,5 +58,6 @@ with st.container():
                 )
             else:
                 resultado = num1 / num2
+                st.balloons()  # Efeito visual de comemoração
                 st.metric(label="Resultado da Divisão", value=f"{resultado:.2f}")
                 st.success("Cálculo realizado com sucesso!")
